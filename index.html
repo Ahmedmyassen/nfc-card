@@ -1,201 +1,272 @@
-```html
 <!DOCTYPE html>
 <html lang="ar" dir="rtl">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#080808">
 
-  <title>DaLegends | روابط التواصل</title>
-  <meta name="description" content="جميع روابط وحسابات DaLegends في مكان واحد">
+<title>DaLegends | روابط التواصل</title>
+<meta name="description" content="جميع روابط وحسابات DaLegends في مكان واحد">
 
-  <style>
-    * {
-      box-sizing: border-box;
-      margin: 0;
-      padding: 0;
-    }
+<style>
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html, body {
+    min-height: 100%;
+}
+
+body {
+    min-height: 100vh;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Arial, sans-serif;
+    background:
+        radial-gradient(circle at 50% 0%, #242424 0%, #101010 38%, #050505 75%);
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    padding: 35px 18px;
+}
+
+.container {
+    width: 100%;
+    max-width: 430px;
+    margin: auto;
+    text-align: center;
+}
+
+/* LOGO */
+.logo {
+    display: block;
+    width: min(260px, 75vw);
+    height: auto;
+    max-height: 160px;
+    object-fit: contain;
+    margin: 0 auto 22px;
+    filter: drop-shadow(0 12px 30px rgba(0,0,0,.45));
+}
+
+h1 {
+    font-size: 28px;
+    font-weight: 700;
+    letter-spacing: .3px;
+    margin-bottom: 5px;
+}
+
+.username {
+    color: #888;
+    font-size: 14px;
+    margin-bottom: 14px;
+}
+
+.description {
+    color: #c7c7c7;
+    font-size: 15px;
+    line-height: 1.8;
+    margin-bottom: 27px;
+}
+
+/* LINKS */
+.links {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.link {
+    width: 100%;
+    min-height: 58px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    position: relative;
+
+    padding: 14px 55px;
+    border-radius: 16px;
+
+    background: rgba(255,255,255,.065);
+    border: 1px solid rgba(255,255,255,.12);
+
+    color: #fff;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 600;
+
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+
+    box-shadow: 0 8px 25px rgba(0,0,0,.20);
+
+    transition:
+        transform .18s ease,
+        background .18s ease,
+        border-color .18s ease;
+}
+
+.link:hover {
+    transform: translateY(-2px);
+    background: rgba(255,255,255,.11);
+    border-color: rgba(255,255,255,.25);
+}
+
+.link:active {
+    transform: scale(.98);
+}
+
+.icon {
+    position: absolute;
+    right: 19px;
+    font-size: 20px;
+}
+
+/* MAIN BUTTON */
+.website {
+    background: #fff;
+    color: #080808;
+    border-color: #fff;
+}
+
+.website:hover {
+    background: #e9e9e9;
+}
+
+.footer {
+    margin-top: 30px;
+    color: #555;
+    font-size: 12px;
+}
+
+.nfc {
+    display: inline-block;
+    margin-bottom: 8px;
+    color: #777;
+    font-size: 12px;
+    letter-spacing: 1px;
+}
+
+@media (max-width: 480px) {
 
     body {
-      min-height: 100vh;
-      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Arial, sans-serif;
-      background:
-        radial-gradient(circle at top, #272727 0%, #101010 45%, #050505 100%);
-      color: white;
-      display: flex;
-      justify-content: center;
-      padding: 35px 18px;
+        padding: 28px 16px;
     }
 
-    .container {
-      width: 100%;
-      max-width: 440px;
-      text-align: center;
-    }
-
-    ..logo {
-  width: 230px;
-  height: auto;
-  object-fit: contain;
-  margin-bottom: 22px;
-  filter: drop-shadow(0 8px 20px rgba(0,0,0,.4));
+    .logo {
+        width: min(220px, 70vw);
     }
 
     h1 {
-      font-size: 30px;
-      margin-bottom: 7px;
-    }
-
-    .username {
-      color: #aaa;
-      font-size: 15px;
-      margin-bottom: 12px;
-    }
-
-    .description {
-      color: #d1d1d1;
-      font-size: 15px;
-      line-height: 1.7;
-      margin: 0 auto 28px;
-      max-width: 360px;
-    }
-
-    .links {
-      display: flex;
-      flex-direction: column;
-      gap: 13px;
+        font-size: 25px;
     }
 
     .link {
-      position: relative;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      min-height: 60px;
-      padding: 14px 50px;
-      border-radius: 16px;
-      color: white;
-      text-decoration: none;
-      font-size: 17px;
-      font-weight: 600;
-      background: rgba(255,255,255,.08);
-      border: 1px solid rgba(255,255,255,.14);
-      backdrop-filter: blur(10px);
-      transition: .2s ease;
-      box-shadow: 0 8px 20px rgba(0,0,0,.15);
+        min-height: 56px;
     }
-
-    .link:hover {
-      transform: translateY(-2px);
-      background: rgba(255,255,255,.14);
-      border-color: rgba(255,255,255,.28);
-    }
-
-    .link:active {
-      transform: scale(.98);
-    }
-
-    .icon {
-      position: absolute;
-      right: 18px;
-      font-size: 22px;
-    }
-
-    .primary {
-      background: white;
-      color: #111;
-    }
-
-    .primary:hover {
-      background: #eeeeee;
-    }
-
-    footer {
-      color: #666;
-      font-size: 12px;
-      margin-top: 35px;
-    }
-  </style>
+}
+</style>
 </head>
 
 <body>
 
-  <main class="container">
+<main class="container">
 
-    <!--
-      ارفع صورتك باسم logo.png
-      في نفس مكان index.html
-    -->
-<img class="logo" src="Da-Legends-white.png" alt="Da Legends">
-    
+    <img
+        src="Da-Legends-white.png"
+        class="logo"
+        alt="Da Legends"
+    >
+
     <h1>DaLegends</h1>
 
-    <div class="username">@DaLegends</div>
+    <div class="username">
+        @DaLegends
+    </div>
 
     <p class="description">
-      أهلاً بك 👋
-      <br>
-      جميع حساباتي وروابطي في مكان واحد.
+        أهلاً بك 👋<br>
+        جميع حساباتي وروابطي في مكان واحد
     </p>
 
     <div class="links">
 
-      <!-- غيّر الروابط الموجودة بالأسفل إلى روابطك -->
+        <a
+            class="link website"
+            href="https://dalegends.com"
+            target="_blank"
+            rel="noopener"
+        >
+            <span class="icon">🌐</span>
+            الموقع الرسمي
+        </a>
 
-      <a class="link primary"
-         href="https://dalegends.com"
-         target="_blank">
-        <span class="icon">🌐</span>
-        الموقع الرسمي
-      </a>
+        <a
+            class="link"
+            href="https://instagram.com/USERNAME"
+            target="_blank"
+            rel="noopener"
+        >
+            <span class="icon">◎</span>
+            Instagram
+        </a>
 
-      <a class="link"
-         href="https://instagram.com/USERNAME"
-         target="_blank">
-        <span class="icon">📸</span>
-        Instagram
-      </a>
+        <a
+            class="link"
+            href="https://tiktok.com/@USERNAME"
+            target="_blank"
+            rel="noopener"
+        >
+            <span class="icon">♪</span>
+            TikTok
+        </a>
 
-      <a class="link"
-         href="https://tiktok.com/@USERNAME"
-         target="_blank">
-        <span class="icon">🎵</span>
-        TikTok
-      </a>
+        <a
+            class="link"
+            href="https://youtube.com/@USERNAME"
+            target="_blank"
+            rel="noopener"
+        >
+            <span class="icon">▶</span>
+            YouTube
+        </a>
 
-      <a class="link"
-         href="https://youtube.com/@USERNAME"
-         target="_blank">
-        <span class="icon">▶️</span>
-        YouTube
-      </a>
+        <a
+            class="link"
+            href="https://t.me/USERNAME"
+            target="_blank"
+            rel="noopener"
+        >
+            <span class="icon">➤</span>
+            Telegram
+        </a>
 
-      <a class="link"
-         href="https://t.me/USERNAME"
-         target="_blank">
-        <span class="icon">✈️</span>
-        Telegram
-      </a>
+        <a
+            class="link"
+            href="https://wa.me/9665XXXXXXXX"
+            target="_blank"
+            rel="noopener"
+        >
+            <span class="icon">●</span>
+            WhatsApp
+        </a>
 
-      <a class="link"
-         href="https://wa.me/9665XXXXXXXX"
-         target="_blank">
-        <span class="icon">💬</span>
-        WhatsApp
-      </a>
-
-      <a class="link"
-         href="mailto:YOUR@email.com">
-        <span class="icon">✉️</span>
-        Email
-      </a>
+        <a
+            class="link"
+            href="mailto:YOUR@email.com"
+        >
+            <span class="icon">✉</span>
+            Email
+        </a>
 
     </div>
 
-    <footer>
-      © 2026 DaLegends
-    </footer>
+    <div class="footer">
+        <span class="nfc">TAP • CONNECT • FOLLOW</span><br>
+        © 2026 DaLegends
+    </div>
 
-  </main>
+</main>
 
 </body>
 </html>
