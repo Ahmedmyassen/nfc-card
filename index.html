@@ -40,18 +40,17 @@ body {
 /* LOGO */
 .logo {
     display: block;
-    width: min(260px, 75vw);
+    width: min(240px, 70vw);
     height: auto;
-    max-height: 160px;
+    max-height: 155px;
     object-fit: contain;
-    margin: 0 auto 22px;
+    margin: 0 auto 20px;
     filter: drop-shadow(0 12px 30px rgba(0,0,0,.45));
 }
 
 h1 {
     font-size: 28px;
     font-weight: 700;
-    letter-spacing: .3px;
     margin-bottom: 5px;
 }
 
@@ -78,13 +77,14 @@ h1 {
 .link {
     width: 100%;
     min-height: 58px;
+
     display: flex;
     align-items: center;
     justify-content: center;
 
     position: relative;
 
-    padding: 14px 55px;
+    padding: 14px 58px;
     border-radius: 16px;
 
     background: rgba(255,255,255,.065);
@@ -116,13 +116,26 @@ h1 {
     transform: scale(.98);
 }
 
+/* SOCIAL ICON */
 .icon {
     position: absolute;
     right: 19px;
-    font-size: 20px;
+
+    width: 23px;
+    height: 23px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
-/* MAIN BUTTON */
+.icon svg {
+    width: 100%;
+    height: 100%;
+    fill: currentColor;
+}
+
+/* MAIN WEBSITE BUTTON */
 .website {
     background: #fff;
     color: #080808;
@@ -133,6 +146,7 @@ h1 {
     background: #e9e9e9;
 }
 
+/* FOOTER */
 .footer {
     margin-top: 30px;
     color: #555;
@@ -143,8 +157,8 @@ h1 {
     display: inline-block;
     margin-bottom: 8px;
     color: #777;
-    font-size: 12px;
-    letter-spacing: 1px;
+    font-size: 11px;
+    letter-spacing: 2px;
 }
 
 @media (max-width: 480px) {
@@ -172,6 +186,7 @@ h1 {
 
 <main class="container">
 
+    <!-- LOGO -->
     <img
         src="Da-Legends-white.png"
         class="logo"
@@ -191,82 +206,60 @@ h1 {
 
     <div class="links">
 
-        <a
-            class="link website"
-            href="https://dalegends.com"
-            target="_blank"
-            rel="noopener"
-        >
-            <span class="icon">🌐</span>
+        <!-- WEBSITE -->
+        <a class="link website"
+           href="YOUR-WEBSITE-LINK"
+           target="_blank"
+           rel="noopener">
+
+            <span class="icon">
+                <svg viewBox="0 0 24 24">
+                    <path d="M12 2a10 10 0 1 0 0 20 10 10 0 0 0 0-20zm6.92 6h-3.01a15.7 15.7 0 0 0-1.38-3.56A8.04 8.04 0 0 1 18.92 8zM12 4c.83 1.2 1.48 2.54 1.87 4h-3.74C10.52 6.54 11.17 5.2 12 4zM4.26 14a7.8 7.8 0 0 1 0-4h3.39a16.5 16.5 0 0 0 0 4H4.26zm.82 2h3.01c.31 1.25.78 2.45 1.38 3.56A8.04 8.04 0 0 1 5.08 16zM8.09 8H5.08a8.04 8.04 0 0 1 4.39-3.56A15.7 15.7 0 0 0 8.09 8zM12 20c-.83-1.2-1.48-2.54-1.87-4h3.74c-.39 1.46-1.04 2.8-1.87 4zm2.35-6h-4.7a14.5 14.5 0 0 1 0-4h4.7a14.5 14.5 0 0 1 0 4zm.18 5.56c.6-1.11 1.07-2.31 1.38-3.56h3.01a8.04 8.04 0 0 1-4.39 3.56zM16.35 14a16.5 16.5 0 0 0 0-4h3.39a7.8 7.8 0 0 1 0 4h-3.39z"/>
+                </svg>
+            </span>
+
             الموقع الرسمي
         </a>
 
-        <a
-            class="link"
-            href="https://instagram.com/USERNAME"
-            target="_blank"
-            rel="noopener"
-        >
-            <span class="icon">◎</span>
+
+        <!-- INSTAGRAM -->
+        <a class="link"
+           href="YOUR-INSTAGRAM-LINK"
+           target="_blank"
+           rel="noopener">
+
+            <span class="icon">
+                <svg viewBox="0 0 24 24">
+                    <path d="M7.75 2h8.5A5.76 5.76 0 0 1 22 7.75v8.5A5.76 5.76 0 0 1 16.25 22h-8.5A5.76 5.76 0 0 1 2 16.25v-8.5A5.76 5.76 0 0 1 7.75 2zm0 2A3.76 3.76 0 0 0 4 7.75v8.5A3.76 3.76 0 0 0 7.75 20h8.5A3.76 3.76 0 0 0 20 16.25v-8.5A3.76 3.76 0 0 0 16.25 4h-8.5zM17 5.5a1.25 1.25 0 1 1 0 2.5 1.25 1.25 0 0 1 0-2.5zM12 7a5 5 0 1 1 0 10 5 5 0 0 1 0-10zm0 2a3 3 0 1 0 0 6 3 3 0 0 0 0-6z"/>
+                </svg>
+            </span>
+
             Instagram
         </a>
 
-        <a
-            class="link"
-            href="https://tiktok.com/@USERNAME"
-            target="_blank"
-            rel="noopener"
-        >
-            <span class="icon">♪</span>
+
+        <!-- TIKTOK -->
+        <a class="link"
+           href="YOUR-TIKTOK-LINK"
+           target="_blank"
+           rel="noopener">
+
+            <span class="icon">
+                <svg viewBox="0 0 24 24">
+                    <path d="M14 2h3.1c.2 1.6 1.1 3 2.4 3.9A6.4 6.4 0 0 0 22 7v3.1a9.3 9.3 0 0 1-5-1.5v7.2A6.2 6.2 0 1 1 11.6 9.7v3.2a3.1 3.1 0 1 0 2.4 3V2z"/>
+                </svg>
+            </span>
+
             TikTok
         </a>
 
-        <a
-            class="link"
-            href="https://youtube.com/@USERNAME"
-            target="_blank"
-            rel="noopener"
-        >
-            <span class="icon">▶</span>
-            YouTube
-        </a>
 
-        <a
-            class="link"
-            href="https://t.me/USERNAME"
-            target="_blank"
-            rel="noopener"
-        >
-            <span class="icon">➤</span>
-            Telegram
-        </a>
+        <!-- YOUTUBE -->
+        <a class="link"
+           href="YOUR-YOUTUBE-LINK"
+           target="_blank"
+           rel="noopener">
 
-        <a
-            class="link"
-            href="https://wa.me/9665XXXXXXXX"
-            target="_blank"
-            rel="noopener"
-        >
-            <span class="icon">●</span>
-            WhatsApp
-        </a>
-
-        <a
-            class="link"
-            href="mailto:YOUR@email.com"
-        >
-            <span class="icon">✉</span>
-            Email
-        </a>
-
-    </div>
-
-    <div class="footer">
-        <span class="nfc">TAP • CONNECT • FOLLOW</span><br>
-        © 2026 DaLegends
-    </div>
-
-</main>
-
-</body>
-</html>
+            <span class="icon">
+                <svg viewBox="0 0 24 24">
+                    <path d="M23.5 6.2a3 3 0 0 0-2.1-2.1C19.5 3.6 12 3.6 12 3.6s-7.5 0-9.4.5A3 3 0 0 0 .5 6.2 31 31 0 0 0 0 12a31 31 0 0 0 .5 5.8 3 3 0 0 0
